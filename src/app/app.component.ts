@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo = 'Ejemplos básicos';
+  imgSrc = 'assets/imgs/ejemplo.svg';
 }
