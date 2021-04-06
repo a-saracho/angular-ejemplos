@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   titulo = 'Ejemplos básicos';
   imgSrc = 'assets/imgs/ejemplo.svg';
+  fecha = new Date();
+  objeto = { id: 5, nombre: 'ejemplo', fecha: new Date()};
+  array = [1, 3, 5, 7, 9];
+
+  mapeoMensajes:
+      {[k: string]: string} = {
+        '=0': 'No tienes ningún mensaje.',
+        '=1': 'Un mensaje.',
+        other: '# mensajes.'};
+  diccionario: any = {
+    casa: 'home',
+    perro: 'dog',
+    other: 'No reconocido'};
 }

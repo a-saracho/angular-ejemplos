@@ -1,3 +1,40 @@
 <app-titulo texto='{{titulo}}'></app-titulo><!--Incrustamos la variable en forma de texto-->
 <app-titulo [texto]='titulo'></app-titulo><!--Invocamos la variable de forma que mantiene su tipo-->
+
 <img width="25%" [src]='imgSrc' [alt]='imgSrc'>
+
+<pre>
+  {{ titulo }}
+  {{ titulo | lowercase }}
+  {{ titulo | uppercase }}
+  {{ titulo | titlecase }}
+  {{ 3.1415926 | number:'4.1-5':'es' }}
+  {{ 12343 | number:'1.2-4':'es' }}
+  {{ 1234.1234 | currency:'EUR':'symbol':'4.2-2' }}
+  {{ 0.25 | percent:'1.0-0':'es' }}
+  {{ fecha | date:'fullDate':'UTC':'es' | titlecase }}
+  {{ fecha | date:'yyyy-MM-ddTHH:mm':'GMT+2':'es' }}
+  {{ array }}
+  {{ array | slice:2:4}}
+  {{ 'Este es un texto largo...' | slice:0:10}}...
+  {{ objeto }}
+  {{ objeto | json }}
+  {{ objeto | keyvalue | json }}
+  {{ 0 | i18nPlural: mapeoMensajes }}
+  {{ 1 | i18nPlural: mapeoMensajes }}
+  {{ 2 | i18nPlural: mapeoMensajes }}
+  {{ 'casa' | i18nSelect: diccionario }}
+  {{ 'perro' | i18nSelect: diccionario }}
+  {{ 'pato' | i18nSelect: diccionario }}
+</pre>
+
+<table border="1">
+  <tr *ngFor="let par of objeto | keyvalue">
+    <td>
+      {{ par.key | titlecase }}
+    </td>
+    <td>
+      {{ par.value }}
+    </td>
+  </tr>
+</table>
