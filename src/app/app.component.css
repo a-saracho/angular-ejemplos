@@ -1,0 +1,11 @@
+.error {
+    color: red;
+}
+
+.importante {
+    font-weight: bold;
+}
+
+.enfasis {
+    text-decoration: underline;
+}

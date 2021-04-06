@@ -21,4 +21,13 @@ export class AppComponent {
     casa: 'home',
     perro: 'dog',
     other: 'No reconocido'};
+
+  clases = { importante: true, enfasis: true};
+
+  estilos = {
+    'font-size': '16px',
+    border: 'solid 1px black'
+  };
+
+  redondeado = '5';
 }

@@ -38,3 +38,19 @@
     </td>
   </tr>
 </table>
+
+<p [ngClass]="objeto.id === 5 ? 'error' : ''">El objeto no puede tener id 5</p>
+
+<input type="checkbox" [(ngModel)]="clases.importante" name="importante">
+<input type="checkbox" [(ngModel)]="clases.enfasis" name="enfasis">
+
+<input type="text" [(ngModel)]="estilos['font-size']" name="tamano">
+<input type="text" [(ngModel)]="estilos['border']" name="borde">
+
+<p [ngClass]="clases" [ngStyle]="estilos">Texto importante con énfasis</p>
+
+
+<input type="number" [(ngModel)]="redondeado">
+
+<p [ngStyle]="{ border: '1px solid black', 'border-radius': redondeado + 'px' }">Redondeado</p>
+<p style="border: 1px solid black; border-radius: {{redondeado}}px;">Redondeado</p>
