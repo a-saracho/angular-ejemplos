@@ -69,3 +69,11 @@
 <!-- Desactivar interpolacion y enlazado de cualquier tipo -->
 <p>{{ 1 +1 }}</p>
 <p ngNonBindable>{{ 1 +1 }}</p>
+
+<p *appAnoserque="condicion">
+  (1) Prueba de Anoserque
+</p>
+
+<p *appAnoserque="!condicion">
+  (2) Prueba de Anoserque
+</p>

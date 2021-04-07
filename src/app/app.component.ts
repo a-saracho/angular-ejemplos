@@ -33,4 +33,7 @@ export class AppComponent {
 
   colorSeleccionado = '#FFFF00';
   miColor = '';
+
+  // condicion = true;
+  condicion = false;
 }

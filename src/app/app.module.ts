@@ -10,6 +10,7 @@ import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { MayusculadorPipe } from './mayusculador.pipe';
 import { FosforitoDirective } from './fosforito.directive';
+import { AnoserqueDirective } from './anoserque.directive';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -17,7 +18,8 @@ registerLocaleData(localeEs);
     AppComponent,
     TituloComponent,
     MayusculadorPipe,
-    FosforitoDirective
+    FosforitoDirective,
+    AnoserqueDirective
   ],
   imports: [
     BrowserModule,
