@@ -56,3 +56,16 @@
 
 <p [ngStyle]="{ border: '1px solid black', 'border-radius': redondeado + 'px' }">Redondeado</p>
 <p style="border: 1px solid black; border-radius: {{redondeado}}px;">Redondeado</p>
+
+<p appFosforito="cyan">Este texto va a salir en fosforito</p>
+
+
+<input type="color" [(ngModel)]="colorSeleccionado"> 
+<p [appFosforito]="colorSeleccionado">Elige el color del subrayado</p>
+
+<p [appFosforito]="miColor" colorPorDefecto="#0000FF">Azul por defecto</p>
+<p [appFosforito]="miColor">Sin color por defecto</p>
+
+<!-- Desactivar interpolacion y enlazado de cualquier tipo -->
+<p>{{ 1 +1 }}</p>
+<p ngNonBindable>{{ 1 +1 }}</p>

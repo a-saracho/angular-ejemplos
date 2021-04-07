@@ -30,4 +30,7 @@ export class AppComponent {
   };
 
   redondeado = '5';
+
+  colorSeleccionado = '#FFFF00';
+  miColor = '';
 }

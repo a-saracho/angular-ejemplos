@@ -9,13 +9,15 @@ import { FormsModule } from '@angular/forms';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { MayusculadorPipe } from './mayusculador.pipe';
+import { FosforitoDirective } from './fosforito.directive';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
     AppComponent,
     TituloComponent,
-    MayusculadorPipe
+    MayusculadorPipe,
+    FosforitoDirective
   ],
   imports: [
     BrowserModule,
