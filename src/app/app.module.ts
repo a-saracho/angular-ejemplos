@@ -8,12 +8,14 @@ import { FormsModule } from '@angular/forms';
 
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { MayusculadorPipe } from './mayusculador.pipe';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
     AppComponent,
-    TituloComponent
+    TituloComponent,
+    MayusculadorPipe
   ],
   imports: [
     BrowserModule,
