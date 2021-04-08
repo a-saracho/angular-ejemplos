@@ -12,6 +12,7 @@ import { MayusculadorPipe } from './mayusculador.pipe';
 import { FosforitoDirective } from './fosforito.directive';
 import { AnoserqueDirective } from './anoserque.directive';
 import { HijoComponent } from './hijo/hijo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -26,7 +27,8 @@ registerLocaleData(localeEs);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
