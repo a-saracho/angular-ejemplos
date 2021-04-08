@@ -77,3 +77,8 @@
 <p *appAnoserque="!condicion">
   (2) Prueba de Anoserque
 </p>
+
+<!--<app-hijo dato="Prueba de dato"></app-hijo>-->
+
+<button (click)="modificar()">Modificar dato desde el padre</button>
+<app-hijo [dato]="texto" (datoModificado)="mostrarPorConsola($event)"></app-hijo>

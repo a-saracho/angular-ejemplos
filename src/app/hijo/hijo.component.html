@@ -1,0 +1,9 @@
+<div>
+    <p>{{dato}}</p>
+    <button (click)="botonClick()">Modificar dato</button>
+
+    <h4>Change log:</h4>
+    <ul>
+    <li *ngFor="let change of changeLog">{{change}}</li>
+    </ul>
+</div>

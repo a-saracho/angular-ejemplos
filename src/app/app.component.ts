@@ -36,4 +36,14 @@ export class AppComponent {
 
   // condicion = true;
   condicion = false;
+
+  texto = 'prueba';
+
+  modificar(): void {
+    this.texto = this.texto + this.texto;
+  }
+
+  mostrarPorConsola(dato: string): void {
+    console.log(`Se ha recibido ${dato} en el padre`);
+  }
 }

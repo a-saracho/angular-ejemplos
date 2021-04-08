@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import { MayusculadorPipe } from './mayusculador.pipe';
 import { FosforitoDirective } from './fosforito.directive';
 import { AnoserqueDirective } from './anoserque.directive';
+import { HijoComponent } from './hijo/hijo.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -19,7 +20,8 @@ registerLocaleData(localeEs);
     TituloComponent,
     MayusculadorPipe,
     FosforitoDirective,
-    AnoserqueDirective
+    AnoserqueDirective,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
